@@ -36,9 +36,8 @@ Section K02
 
 By the end of the course, students will be able to:
 
-* Use [GitHub](https://github.com) for creating a reproducible research document
-
-
+*   Use [GitHub](https://github.com) for creating a reproducible research document
+    *     My GitHub username is: _Gloria Chun_
 
 * Obtain, clean, transform, and visualize a dataset using the R programming language.
 
@@ -51,10 +50,10 @@ By the end of the course, students will be able to:
 
 ## Running R code in a code chunk
 
-
-
-
-
+```{r}
+x <- 2+2
+x + 3
+```
 
 The output of first line of code is not printed out because it is assigned to a variable instead.
 
@@ -62,3 +61,7 @@ The second line of output is printed out instead, but this means that the calcul
 
 
 ## Displaying Graphs
+
+```{r}
+ggplot2::qplot(data = iris, x = Sepal.Length, y = Sepal.Width)
+```
